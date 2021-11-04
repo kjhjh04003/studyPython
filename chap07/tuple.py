@@ -58,3 +58,8 @@ print(t1 + t2)
 t1 += t2
 print(t1)
 print(id(t1))
+
+# 튜플에는 컴프리헨션이 없다.
+number_thing = (number for number in range(1,6))
+print(number_thing)
+print(type(number_thing)) # 제너레이터 객체를 반환
